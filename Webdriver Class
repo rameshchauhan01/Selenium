@@ -1,0 +1,9 @@
+| Property | attribute Description | Example |
+| ---------| ----------------------| --------|
+|current_url| This gets the URL of the current page displayed in the browser| driver.current_url|
+|current_window_handle| This gets the handle of the current window |driver.current_window_handle|
+|name |This gets the name of the underlying browser for this instance| driver.name|
+|orientation |This gets the current orientation of the device |driver.orientation|
+|page_source | This gets the source of the current page |driver.page_source|
+|title |This gets the title of the current page |driver.title|
+|window_handles | This gets the handles of all windows within the current sessio|n driver.window_handles|
