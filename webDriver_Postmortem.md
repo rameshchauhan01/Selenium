@@ -25,17 +25,16 @@ In Selenium you have an interface called a SearchContext and then you have the B
 A SearchContext can be a WebElement or a WebDriver  
 Example:  
 driver.find_element(By.ID, "some_id");
-So using Page Object pattern is the reason why you might need **find_element() + By instead of find_element_by_...().**  
-1) SearchContext.find_element(By...)
-or
-2) By.find_element(SearchContext...)
-Both do the same thing!
-
-1) driver.find_element(By.ID, "some_id");  
+So using Page Object pattern is the reason why you might need **find_element() + By instead of find_element_by_...().**  <br> 
+1.SearchContext.find_element(By...)  
 or  
-2) (By.ID, "some_id").find_element(driver);  
+2.By.find_element(SearchContext...)  
+Both do the same thing!  
+1.driver.find_element(By.ID, "some_id");  
+or  
+2.(By.ID, "some_id").find_element(driver);  
 Again! Both do the same thing, it's just another way to "read" these expressions like this:  
-1) "take the driver and search for an element using this By-statement"  
-or  
-2) "take the By-statement and search for an element that fits this statement within driver"
+1."take the driver and search for an element using this By-statement"  
+or
+2."take the By-statement and search for an element that fits this statement within driver"  
 
