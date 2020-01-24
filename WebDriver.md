@@ -1,3 +1,4 @@
+# Browser Properties implementation
 The WebDriver class implements the following properties for accessing the browser:
 
 | Property | attribute Description | Example |
@@ -10,7 +11,9 @@ The WebDriver class implements the following properties for accessing the browse
 |title |This gets the title of the current page |driver.title|
 |window_handles | This gets the handles of all windows within the current sessio|n driver.window_handles|
 
-The WebDriver class implements the following properties for accessing the browser:
+# Browser Method implementation
+The WebDriver class implements various methods to interact with the browser window,
+web pages, and the elements on these pages:
 
 | Method | Description      | Example |
 |------|--------------|-------|
@@ -30,7 +33,7 @@ The WebDriver class implements the following properties for accessing the browse
 |set_page_load_timeout(time_to_wait)| This sets the amount of time to wait for a page load to complete. time_to_wait is the amount of time to wait (in seconds).|driver.set_page_load_timeout(30)|
 |set_script_timeout(time_to_wait)| This sets the amount of time that the script should wait during an execute_async_script call before throwing an error.time_to_wait is the amount of time to wait (in seconds).|driver.set_script_timeout(30)|
 
-
+# WeElement class properties
 The WebElement class implements the following properties:
 
 |Property/attribute| Description| Example|
@@ -39,6 +42,7 @@ The WebElement class implements the following properties:
 |tag_name| This gets this element’s HTML tag name| element.tag_name|
 |text| This gets the text of the element| element.text|
 
+# WebElement class methos
 The WebElement class implements the following methods:
 
 |Method| Description |Example|
@@ -52,4 +56,19 @@ The WebElement class implements the following methods:
 |send_keys(*value)| This simulates typing into the element. or setting form fields.|element.send_keys(“foo”)|
 |submit()| This submits a form. If you call this method on an element, it will submit the parent form. |element.submit()|
 |value_of_css_property(property_name)| This gets the value of a CSS property.|element.value_of_css_property(“backgroundcolor”)|
+
+# find element methods:
+Selenium provides eight find_element_by methods to locate elements. In this section, we
+will see each one of them in detail. The following table lists find_element_by methods:
+
+|Method| Description|Example|
+|-----|------|------|
+|find_element_by_id(id)|This method finds an element by the ID attribute|driver.find_element_by_id(‘search’)|
+|find_element_by_name(name)|| driver.find_element_by_name(‘q’)|
+|find_element_by_class_name(name)|| driver.find_element_by_class_name(‘input-text’)|
+|find_element_by_tag_name(name)|| driver.find_element_by_tag_name(‘input’)|
+|find_element_by_xpath(xpath)|| driver.find_element_by_xpath(‘//form[0]/div[0]/input[0]’)|
+|find_element_by_css_selector(css_selector)|| driver.find_element_by_css_selector(‘#search’)|
+|find_element_by_link_text(link_text)|| driver.find_element_by_link_text(‘Log In’)|
+|find_element_by_partial_link_text(link_text)|| driver.find_element_by_partial_link_text(‘Log’)|
 
