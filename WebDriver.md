@@ -72,3 +72,30 @@ will see each one of them in detail. The following table lists find_element_by m
 |find_element_by_link_text(link_text)|| driver.find_element_by_link_text(‘Log In’)|
 |find_element_by_partial_link_text(link_text)|| driver.find_element_by_partial_link_text(‘Log’)|
 
+# Drop down and List:
+Dropdowns or lists are implemented with the **select** element in HTML. The options or choices are implemented with the **options**
+The **Select class** is a special class in Selenium that is used to interact with dropdowns or lists. It offers various methods and properties for user interaction.  
+**Properties of the Select class:**
+
+|Property/attribute| Description| Example|
+|----|----|-----|
+|all_selected_options| This gets a list of all the selected options belonging to the dropdown or list|select_element.all_selected_options|
+|first_selected_option| This gets the first selected / currently selected option from the dropdown or list|  select_element.first_selected_option|
+|options |This gets a list of all options from the dropdown or list |select_element.options|
+
+**Select class implement the following methods:** 
+
+|Method| Description|Example|
+|---|----|---|
+|deselect_all()| This clears all the selected entries from a multiselect dropdown or list |select_element.deselect_all()|
+|deselect_by_index(index)| This deselects the option at the given index from the dropdown or list deselected|
+select_element.deselect_by_index(1)|
+|deselect_by_value(value) |This deselects all options that have a value matching the argument from the dropdown or list|
+select_element.deselect_by_value(“foo”)|
+|deselect_by_visible_text(text)| This deselects all the options that display text matching the argument from the dropdown or list|
+select_element.deselect_by_visible_text(“bar”)|
+|select_by_index(index)| This selects an option at the given index from the dropdown or list|select_element.select_by_index(1)|
+|select_by_value(value)| This selects all the options that have a value matching the argument from the dropdown or list|
+select_element.select_by_value(“foo”)|
+|select_by_visible_text(text)| This selects all the options that display the text matching the argument from the dropdown or list|
+select_element.select_by_visible_text(“bar”)|
