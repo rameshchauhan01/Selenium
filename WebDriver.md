@@ -1,4 +1,4 @@
-# Browser Properties implementation
+## Browser Properties implementation
 The WebDriver class implements the following properties for accessing the browser:
 
 | Property | attribute Description | Example |
@@ -11,7 +11,7 @@ The WebDriver class implements the following properties for accessing the browse
 |title |This gets the title of the current page |driver.title|
 |window_handles | This gets the handles of all windows within the current sessio|n driver.window_handles|
 
-# Browser Method implementation
+## Browser Method implementation
 The WebDriver class implements various methods to interact with the browser window,
 web pages, and the elements on these pages:
 
@@ -33,7 +33,7 @@ web pages, and the elements on these pages:
 |set_page_load_timeout(time_to_wait)| This sets the amount of time to wait for a page load to complete. time_to_wait is the amount of time to wait (in seconds).|driver.set_page_load_timeout(30)|
 |set_script_timeout(time_to_wait)| This sets the amount of time that the script should wait during an execute_async_script call before throwing an error.time_to_wait is the amount of time to wait (in seconds).|driver.set_script_timeout(30)|
 
-# WeElement class properties
+## WeElement class properties
 The WebElement class implements the following properties:
 
 |Property/attribute| Description| Example|
@@ -42,7 +42,7 @@ The WebElement class implements the following properties:
 |tag_name| This gets this element’s HTML tag name| element.tag_name|
 |text| This gets the text of the element| element.text|
 
-# WebElement class methos
+## WebElement class methos
 The WebElement class implements the following methods:
 
 |Method| Description |Example|
@@ -57,7 +57,7 @@ The WebElement class implements the following methods:
 |submit()| This submits a form. If you call this method on an element, it will submit the parent form. |element.submit()|
 |value_of_css_property(property_name)| This gets the value of a CSS property.|element.value_of_css_property(“backgroundcolor”)|
 
-# find element methods:
+## find element methods:
 Selenium provides eight find_element_by methods to locate elements. In this section, we
 will see each one of them in detail. The following table lists find_element_by methods:
 
@@ -72,7 +72,7 @@ will see each one of them in detail. The following table lists find_element_by m
 |find_element_by_link_text(link_text)|| driver.find_element_by_link_text(‘Log In’)|
 |find_element_by_partial_link_text(link_text)|| driver.find_element_by_partial_link_text(‘Log’)|
 
-# Drop down and List:
+## Drop down and List:
 Dropdowns or lists are implemented with the **select** element in HTML. The options or choices are implemented with the **options**
 The **Select class** is a special class in Selenium that is used to interact with dropdowns or lists. It offers various methods and properties for user interaction.  
 **Properties of the Select class:**
