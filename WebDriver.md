@@ -99,3 +99,21 @@ select_element.deselect_by_visible_text(“bar”)|
 select_element.select_by_value(“foo”)|
 |select_by_visible_text(text)| This selects all the options that display the text matching the argument from the dropdown or list|
 select_element.select_by_visible_text(“bar”)|
+
+**What is a proxy?** <br/>
+  A proxy is an intermediary between client requests and server responses. Proxies are primarily used to ensure privacy and encapsulation between numerous interactive systems.
+  This is especially useful when clients’ websites have to be labeled as allowed or blocked based on the website content. Websites often block IPs that make too many requests, and proxies are a way to get around this. <br/>
+**How to set Proxy in Selenium?**  <br/> 
+  from selenium import webdriver
+  PROXY = "11.456.448.110:8080"
+  chrome_options = WebDriver.ChromeOptions()
+  chrome_options.add_argument('--proxy-server=%s' % PROXY)
+  chrome = webdriver.Chrome(chrome_options=chrome_options)  
+**single proxy server in the extension.** <br/>
+  from selenium import webdriver
+  from selenium.webdriver.chrome.options import Options
+  chrome_options = Options()
+  chrome_options.add_extension("proxy.zip")
+  driver = webdriver.Chrome(executable_path='chromedriver.exe', chrome_options=chrome_options)
+  driver.get("http://google.com")
+  driver.close()
